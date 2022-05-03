@@ -1,3 +1,6 @@
+*{
+    inset: 0;
+}
 .container{
     position: absolute;
    
@@ -25,6 +28,10 @@
 .caixasTexto input{
     width: 300px;
     height: 100px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+
 }
 
 .selecaoCodigos{
@@ -48,16 +55,17 @@
 .tipoCodigo{
     height: 50px;
     width: 500px;
+    outline: 0;
+
     
 }
-/*
-.ocultarPasso{
-   display: none;
 
-}*/
+
+
 
 .btnRadios{
     display: flex;
+    width: 500px;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -75,24 +83,49 @@
     padding: 20px;
 }
 
+.chaves{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+  
+
+    
+}
+
 input[type='radio']{
 margin-left: 50px;
+
+
     
 }
 
 #enviarBtn{
-    width: 150px;
+    width: 200px;
     height: 50px;
     padding: 5px;
-    font-size: 15px;
+    font-size: 10px;
     display: none;
+    background-color: #1770ff;
+    font-size: 30px;
+    color: aliceblue;
+    border-radius: 50px;
+    border: 0;
+    
+}
+
+#enviarBtn:hover{
+    background-color: #FFD000;
+    color: #000;
+    cursor: pointer;
+    transition: 0.5s;
+   
     
 }
 
 .posicaoBotao{
     display: flex;
+    width: 500px;
     align-items: center;
     justify-content: center;
     margin: 10px;
 }
-

@@ -17,16 +17,21 @@
         <input id="saidMeansagem" type="text">
             </div>
 
+
+            
     <div class="selecaoCodigos">
 
         <label>Selecione um tipo de código</label>
-        <select id="tipoCodigo" class="formatacaoCampos">
+        <select id="tipoCodigo" onclick="selecionado(this.value)" class="formatacaoCampos">
             <option value="Selecione">selecionar</option>
             <option value="cifraDeCesar">Cifra de Cesar</option>
             <option value="base64">Base 64</option>
         </select>
-        <label for="passos">Passos</label>
-        <input type="number" id="passos" class="formatacaoCampos, ocultarPasso">
+        
+        <div class="chaves">
+            <label for="passos">Passos</label>
+            <input type="number" id="passos">
+            </div>
             
         
     </div>
