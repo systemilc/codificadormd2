@@ -1,51 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Codificar | Decodificar</title>
+    <link rel="stylesheet" href="./css/style_desktop.css">
+    <link rel="stylesheet" href="css/style_mobile.css">
+    <script src="https://kit.fontawesome.com/4ce637ec4c.js" crossorigin="anonymous"></script>
+    <img class="fa-blink" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-128.png"/>
+  <!--  <link rel="shortcut icon" href="./Imagens/favicon.jpg" type="image/x-icon" />-->
+    <title>Cifra de Cesar / Base64</title>
 </head>
-<body>
-    <div class="container">
-        <form>
-           <div class="caixasTexto">
-        <label for="entradaMensagem">Entrada de mensagem</label>
-        <input id="entradaMensagem" type="text">
-        <label for="saidaMensagem">Retorno</label>
-        <input id="saidMeansagem" type="text">
+    <body>
+      <div class="container">
+    
+       
+        <h1>Codificador e decodificador - <span class='resilia'>Resilia</span></h1>
+    <form>
+
+
+        <div class="caixasTexto">
+            <label for="entradaDeTexto">Entre com a palavra ou texto que deseja codificar ou decodificar</label>
+            <textarea name="" id="entradaDeTexto" cols="30" rows="10" placeholder="Entrada de texto"></textarea>
+                
+            <textarea name="" id="saida" cols="30" rows="10" placeholder="Resultado conversão"></textarea>
             </div>
 
+            <div class="selecaoCodigos">
+            <select id="tipoCodigo" onclick="selecionado(this.value)">
+                <option value="Selecione">Selecione uma codificação</option>
+                <option value="asci">Asci</option>
+                <option value="base64">Base 64</option>
+            </select>
 
-            
-    <div class="selecaoCodigos">
+            <div class="chaves">
+                <label for="passos">Passos</label>
+                <input type="number" id="passos">
+                </div>
+                
 
-        <label>Selecione um tipo de código</label>
-        <select id="tipoCodigo" onclick="selecionado(this.value)" class="formatacaoCampos">
-            <option value="Selecione">selecionar</option>
-            <option value="cifraDeCesar">Cifra de Cesar</option>
-            <option value="base64">Base 64</option>
-        </select>
+        </div>
         
-        <div class="chaves">
-            <label for="passos">Passos</label>
-            <input type="number" id="passos">
-            </div>
-            
-        
-    </div>
-    <div class="btnRadios">
-        <input type="radio" name="tipoCodificacao" value="Codificar"/>Codificar</br>
-        <input type="radio" name="tipoCodificacao" value="Decodificar"/>Decodificar</br>
-    </div>
-    <div class="posicaoBotao">
-        <button id="enviarBtn">Codificar / Decodificar</button>
-    </div>
+
+        <div class="radios, btnRadios">
+            <input type="radio" name="tipo_acao" value="Codificar" class="codificar">Codificar
+            <input type="radio" name="tipo_acao" value="Decodificar" class="codificar"> Decodificar
+        </div>
+
+             
+        <div class="posicaoBotao">
+
+<button id="botao">Calcular</button> 
+</div>
     </form>
+   
+    <div id="resultado" > 
+
     </div>
+    <section>
 
-<script src="./index.js"></script>
+        <footer>Desenvolvido por Isaac Costa</footer>
+  
+</div>
 
+
+  
+    <script src="./js/script.js"></script>
 </body>
 </html>
