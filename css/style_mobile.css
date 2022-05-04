@@ -43,5 +43,10 @@
     footer{
         margin-bottom: 15px;
     }
+    .posicaoBotao{
+        
+        width: auto;
+        
+    }
 
 }
